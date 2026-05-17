@@ -16,7 +16,11 @@ Aplicação web desenvolvida com o objetivo de consolidar conceitos avançados d
 
 O **Ubers** é um projeto de aplicativo web desenvolvido para rodar direto no navegador. 
 
-> 💡 *Adicione aqui uma ou duas frases explicando o que o seu projeto faz. Exemplo: "O objetivo do jogo é gerenciar corridas de passageiros desvencilhando-se de obstáculos no mapa e pontuando a cada entrega feita com sucesso."*
+> 💡 *O objetivo do aplicativo é informar sobre os Principais Jogadores do Ubers e Mostrar a Formação do Time e suas Regras "*
+
+<p align="center">
+  <img src="timeubers.jpg" alt=" Ubers">
+</p>
 
 ---
 
@@ -26,7 +30,7 @@ Você pode testar o projeto de duas formas:
 
 ### 🌐 1. Pelo Navegador (GitHub Pages)
 O projeto está hospedado e rodando online! Acesse o link abaixo para jogar agora mesmo:
-👉 **[CLIQUE AQUI PARA JOGAR](https://github.com/shadowvoidh/Ubers.git)**
+👉 **[CLIQUE AQUI PARA JOGAR](https://shadowvoidh.github.io/Ubers/)**
 
 ### 💻 2. Executando Localmente
 Se quiser rodar o projeto na sua máquina para ver o código funcionando:
@@ -57,7 +61,9 @@ O projeto ainda está recebendo melhorias! Aqui estão algumas ideias que preten
 - [ ] Deixar o visual adaptado para telas de celular.
 
 ---
-
+<p align="center">
+  <img src="barouu.gif" alt="Barou">
+</p>
 ## 👤 Autor
 
 Desenvolvido com programação e dedicação. 
