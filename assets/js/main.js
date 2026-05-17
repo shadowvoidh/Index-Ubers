@@ -91,7 +91,7 @@ iniciarSequenciaJogador('player-barou', [
 
 // DON LORENZO
 iniciarSequenciaJogador('player-lorenzo', [
-    { src: "/assets/img/gif/donlorenzo.gif", tempo: 4700 }
+    { src: "/assets/img/gif/don-lorenzo-music.gif", tempo: 4700 }
 ]);
 
 // AIKU
