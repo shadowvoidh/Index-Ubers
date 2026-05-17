@@ -86,33 +86,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // BAROU
 iniciarSequenciaJogador('player-barou', [
-    { src: "./assets/img/gif/barou-barou-goal.gif", tempo: 5800 }
+    { src: "/assets/img/gif/barou-barou-goal.gif", tempo: 5800 }
 ]);
 
 // DON LORENZO
 iniciarSequenciaJogador('player-lorenzo', [
-    { src: "./assets/img/gif/donlorenzo.gif", tempo: 4700 }
+    { src: "/assets/img/gif/donlorenzo.gif", tempo: 4700 }
 ]);
 
 // AIKU
 iniciarSequenciaJogador('player-aiku', [
-    { src: "./assets/img/gif/aikugif0.gif", tempo: 3000 },
-    { src: "./assets/img/gif/aikugif1.gif", tempo: 5000 }
+    { src: "/assets/img/gif/aikugif0.gif", tempo: 3000 },
+    { src: "/assets/img/gif/aikugif1.gif", tempo: 5000 }
 ]);
 
     // ARYU
     iniciarSequenciaJogador('player-aryu', [
-        { src: "../assets/img/gif/aryujyubei.gif", tempo: 5800 }
+        { src: "/assets/img/gif/aryujyubei.gif", tempo: 5800 }
     ]);
 
     // NIKO
     iniciarSequenciaJogador('player-niko', [
-        { src: "../assets/img/gif/niko2.gif", tempo: 3000 }
+        { src: "/assets/img/gif/niko2.gif", tempo: 3000 }
     ]);
 
     // SENDOU
     iniciarSequenciaJogador('player-sendou', [
-        { src: "../assets/img/gif/sendou.gif", tempo: 5800 }
+        { src: "/assets/img/gif/sendou.gif", tempo: 5800 }
     ]);
 });
 
