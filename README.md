@@ -20,7 +20,7 @@ O **Ubers** é um projeto de aplicativo web desenvolvido para rodar direto no na
 
 ---
 
-## 🎮 Como Jogar / Testar
+## 🎮 Como Testar
 
 Você pode testar o projeto de duas formas:
 
@@ -62,4 +62,4 @@ O projeto ainda está recebendo melhorias! Aqui estão algumas ideias que preten
 
 Desenvolvido com programação e dedicação. 
 
-* **Shadow_Voidh** - [Seu Perfil do GitHub](https://github.com/shadowvoidh)
+* **Shadow_Voidh** - (https://github.com/shadowvoidh)
