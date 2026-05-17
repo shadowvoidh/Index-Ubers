@@ -96,7 +96,6 @@ iniciarSequenciaJogador('player-lorenzo', [
 
 // AIKU
 iniciarSequenciaJogador('player-aiku', [
-    { src: "/assets/img/gif/aikugif0.gif", tempo: 3000 },
     { src: "/assets/img/gif/aikugif1.gif", tempo: 5000 }
 ]);
 
