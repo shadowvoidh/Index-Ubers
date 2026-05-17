@@ -85,26 +85,26 @@ document.addEventListener("DOMContentLoaded", () => {
     // ======================================================
 
     // BAROU
-    iniciarSequenciaJogador('player-barou', [
-        { src: "../assets/img/gif/barou.gif", tempo: 3600 }, 
-        { src: "../assets/img/gif/barouu.gif", tempo: 1600 }, 
-        { src: "../assets/img/gif/king-barou-lion.gif", tempo: 2900 },
-        { src: "../assets/img/gif/barou-barou-goal.gif", tempo: 5800 }
-    ]);
+iniciarSequenciaJogador('player-barou', [
+    { src: "./assets/img/gif/barou.gif", tempo: 3600 },
+    { src: "./assets/img/gif/barouu.gif", tempo: 1600 },
+    { src: "./assets/img/gif/king-barou-lion.gif", tempo: 2900 },
+    { src: "./assets/img/gif/barou-barou-goal.gif", tempo: 5800 }
+]);
 
-    // DON LORENZO
-    iniciarSequenciaJogador('player-lorenzo', [
-        { src: "../assets/img/gif/don-lorenzo-music.gif", tempo: 5600 }, 
-        { src: "../assets/img/gif/donlorenzo.png", tempo: 1000 }, 
-        { src: "../assets/img/gif/don-lorenzo-golden-teeth.gif", tempo: 4600 },
-        { src: "../assets/img/gif/don-lorenzo.gif", tempo: 4700 }  
-    ]);
+// DON LORENZO
+iniciarSequenciaJogador('player-lorenzo', [
+    { src: "./assets/img/gif/don-lorenzo-music.gif", tempo: 5600 },
+    { src: "./assets/img/gif/donlorenzo.png", tempo: 1000 },
+    { src: "./assets/img/gif/don-lorenzo-golden-teeth.gif", tempo: 4600 },
+    { src: "./assets/img/gif/donlorenzo.gif", tempo: 4700 }
+]);
 
-    // AIKU
-    iniciarSequenciaJogador('player-aiku', [
-        { src: "../assets/img/gif/aikugif0.gif", tempo: 3000 }, 
-        { src: "../assets/img/gif/aikugif1.gif", tempo: 5000 }
-    ]);
+// AIKU
+iniciarSequenciaJogador('player-aiku', [
+    { src: "./assets/img/gif/aikugif0.gif", tempo: 3000 },
+    { src: "./assets/img/gif/aikugif1.gif", tempo: 5000 }
+]);
 
     // ARYU
     iniciarSequenciaJogador('player-aryu', [
