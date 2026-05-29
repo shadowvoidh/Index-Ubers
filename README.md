@@ -29,8 +29,8 @@ O **Ubers** é um projeto de aplicativo web desenvolvido para rodar direto no na
 Você pode testar o projeto de duas formas:
 
 ### 🌐 1. Pelo Navegador (GitHub Pages)
-O projeto está hospedado e rodando online! Acesse o link abaixo para jogar agora mesmo:
-👉 **[CLIQUE AQUI PARA JOGAR](https://shadowvoidh.github.io/Ubers/)**
+O projeto está hospedado e rodando online! Acesse o link abaixo para acessar agora mesmo:
+👉 **[CLIQUE AQUI PARA Acessar](https://shadowvoidh.github.io/Ubers/)**
 
 ### 💻 2. Executando Localmente
 Se quiser rodar o projeto na sua máquina para ver o código funcionando:
@@ -56,7 +56,6 @@ O projeto foi construído utilizando as principais tecnologias da Web:
 ## 🚀 Próximos Passos / Funcionalidades Futuras
 
 O projeto ainda está recebendo melhorias! Aqui estão algumas ideias que pretendo implementar:
-- [ ] Adicionar sistema de pontuação (Score).
 - [ ] Criar efeitos sonoros para as ações principais.
 - [ ] Deixar o visual adaptado para telas de celular.
 
@@ -64,7 +63,8 @@ O projeto ainda está recebendo melhorias! Aqui estão algumas ideias que preten
 <p align="center">
   <img src="assets/img/gif/barouu.gif" alt="Barou">
 </p>
-## 👤 Autor
+
+##  👤 Autor
 
 Desenvolvido com programação e dedicação. 
 
