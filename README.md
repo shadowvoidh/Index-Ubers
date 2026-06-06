@@ -30,7 +30,7 @@ Você pode testar o projeto de duas formas:
 
 ### 🌐 1. Pelo Navegador (GitHub Pages)
 O projeto está hospedado e rodando online! Acesse o link abaixo para acessar agora mesmo:
-👉 **[CLIQUE AQUI PARA Acessar](https://shadowvoidh.github.io/Ubers/)**
+👉 **[CLIQUE AQUI PARA ACESSAR](https://shadowvoidh.github.io/Index-Ubers/)**
 
 ### 💻 2. Executando Localmente
 Se quiser rodar o projeto na sua máquina para ver o código funcionando:
@@ -61,7 +61,7 @@ O projeto ainda está recebendo melhorias! Aqui estão algumas ideias que preten
 
 ---
 <p align="center">
-  <img src="assets/img/img/Ubers2.png" alt="Barou">
+  <img src="assets/img/img/ubersjunto.webp" alt="Barou">
 </p>
 
 ##  👤 Autor
