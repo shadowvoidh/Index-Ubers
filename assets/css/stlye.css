@@ -733,7 +733,7 @@ p {
     box-shadow: 0 0 40px var(--gold-glow);
     
     /* Removemos o width: 100% solto para deixar o Grid controlar a largura */
-    height: 720px;                 
+    height: 750px;                 
     
     padding: 35px 20px;
     display: flex;
@@ -845,12 +845,13 @@ background:
 .container-tatico {
     display: grid !important;
     /* Coluna 1: O campo (máximo 800px) | Coluna 2: O Snuffy (fixo em 280px) */
+    flex: 1 !important;
     grid-template-columns: minmax(300px, 800px) 280px !important;
     justify-content: center;       /* Centraliza o conjunto na tela */
     align-items: start;            /* Alinha o topo do Snuffy com o topo do campo */
     gap: 30px;                     /* Distância perfeita entre o campo e o técnico */
     width: 100%;
-    max-width: 1160px;             /* Largura total controlada para caber em qualquer monitor */
+    max-width: 1600px;             /* Largura total controlada para caber em qualquer monitor */
     margin: 40px auto;             /* Centraliza o bloco na página */
     padding: 0 20px;
     box-sizing: border-box;
@@ -1188,3 +1189,441 @@ background:
             font-family: var(--font-heading);
             letter-spacing: 2px;
         }
+
+        .btn-formacao {
+    background: transparent;
+    border: 1px solid var(--gold-primary);
+    color: var(--gold-primary);
+    padding: 8px 16px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-formacao:hover, .btn-formacao.active {
+    background: var(--gold-primary);
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+
+
+
+.jogador {
+    display: flex;
+    flex-direction: column; /* Empilha a imagem acima do nome */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center;
+    gap: 4px;              /* Espaço entre a imagem e o nome */
+}
+
+/* Ícone do Jogador (Redondo / Avatar) */
+.icon-jogador {
+    width: 45px;            /* Ajuste o tamanho da imagem conforme necessário */
+    height: 45px;
+    border-radius: 50%;     /* Deixa a foto redonda */
+    object-fit: cover;
+    border: 2px solid #d4af37; /* Borda dourada combinando com o tema */
+    background-color: #000;
+}
+
+/* Caixa com o Nome do Jogador (seu estilo atual) */
+.nome-jogador {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #e5b324;         /* Cor do texto amarela/dourada */
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;    /* Evita que o nome quebre em duas linhas */
+}
+
+
+
+/* Aumenta o tamanho da foto do jogador */
+.img-jogador {
+    width: 70px;          /* Aumentado de 40px para 70px */
+    height: 70px;         /* Aumentado de 40px para 70px */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+}
+
+/* Garante espaço suficiente no card do jogador */
+.jogador-pos {
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 8px 12px;     /* Dá mais espaço interno ao botão/card */
+    gap: 6px;
+}
+
+/* Container que junta o Banco Esquerdo + Campo Tático */
+.container-formacao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+
+/* Container principal da barra esquerda */
+.painel-reservas {
+    width: 240px;
+    background-color: #0b0e0c;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
+}
+
+/* Títulos de Coach e Banco */
+.titulo-banco {
+    background-color: #d4af37;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Divisor horizontal */
+.divisor-banco {
+    border: none;
+    border-top: 1px dashed #d4af37;
+    margin: 8px 0;
+    opacity: 0.5;
+}
+
+/* Linha com a foto e o nome do jogador/coach */
+.item-reserva {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.item-reserva:hover {
+    border-color: #d4af37;
+    transform: translateX(3px);
+}
+
+/* Bolinha da foto no lado esquerdo */
+.foto-reserva {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+    background-color: #000;
+    flex-shrink: 0;
+}
+
+/* Nome do reserva */
+.nome-reserva {
+    color: #e5b324;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: monospace, sans-serif;
+}
+
+/* Container que alinha os 3 blocos lado a lado */
+.layout-estrategia {
+    display: flex !important;
+    flex-direction: row !important; /* Força ficar um do lado do outro */
+    justify-content: center;
+    align-items: flex-start;        /* Alinha todos pelo topo */
+    gap: 20px;                      /* Espaço entre os painéis */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.layout-estrategia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Fixa a largura do painel do Banco */
+.painel-reservas {
+    width: 200px !important;       /* Largura fixa menor */
+    flex-shrink: 0 !important;      /* Impede que o banco encolha */
+}
+
+/* Fixa a largura da carta do Treinador */
+.painel-treinador {
+    width: 260px !important;       /* Largura fixa da carta da direita */
+    flex-shrink: 0 !important;      /* Impede que o treinador encolha */
+}
+
+
+.campo-tatico, 
+div[class*="campo"] {
+    width: 750px !important;       /* Aumenta a largura fixa do campo */
+    min-width: 700px !important;   /* Impede que diminua */
+}
+
+
+/* Por padrão, esconde todas as formações */
+.layout-estrategia {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Mostra apenas a formação que tiver a classe 'ativo' */
+.layout-estrategia.ativo {
+    display: flex !important;
+}
+/* Container que segura o Banco + Campo */
+.container-tatico {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.painel-reservas {
+    flex-shrink: 0;
+    width: 220px;
+}
+
+/* Campo flexível para não estourar a tela */
+.campo-ubers {
+    flex: 1; 
+    max-width: 700px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.campo-ubers .linha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Container pai de cada aba */
+.layout-estrategia,
+.layout-estrategia-aba {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important; 
+    gap: 25px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+}
+
+/* Painel de Reservas do Coach/Banco */
+.painel-reservas {
+    flex-shrink: 0 !important;
+    width: 240px !important;
+    margin-top: 0 !important; 
+}
+
+/* Estrutura do Campo */
+.campo-ubers {
+    flex: 1 !important;
+    max-width: 650px !important; 
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: 0 !important;
+}
+
+
+
+
+
+
+/* Centraliza perfeitamente todas as linhas do campo */
+.campo-ubers .linha {
+    display: flex !important;
+    justify-content: center !important; 
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+/* Espaçamento uniforme quando houver múltiplos jogadores na mesma linha (Meio e Defesa) */
+.campo-ubers .linha.meio,
+.campo-ubers .linha.defesa {
+    justify-content: space-around !important; 
+}
+
+
+.campo-ubers .jogador-pos {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Container principal do banco */
+.painel-reservas {
+    display: flex !important;
+    flex-direction: column !important; 
+    width: 220px !important;
+    min-width: 220px !important;
+    background-color: #0d0d0d;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box !important;
+}
+
+/* Seção interna do banco */
+.secao-banco {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+}
+
+
+.item-reserva {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+
+#formacao-2,
+#formacao-3 {
+    display: none !important;
+}
+
+
+.layout-estrategia-aba:not(.ativa) {
+    display: none !important;
+}
+
+
+.container-formacoes {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.aba-tática {
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.aba-tática[style*="display: none"] {
+    display: none !important;
+}
+
+
+
+
+
+.layout-estrategia {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block !important;
+}
+
+
+
+
+.painel-reservas {
+    flex-shrink: 0 !important;
+    width: 220px;
+}
+
+.campo-ubers {
+    flex-shrink: 0 !important;
+}
+.layout-estrategia-aba {
+    display: none;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+
+.layout-estrategia-aba.ativa {
+    display: flex !important;
+}
+
+
+
+.painel-reservas {
+    flex-shrink: 0 !important;
+    width: 220px !important;
+    min-height: 500px !important; 
+}
+
+
+.layout-estrategia-aba {
+    display: none;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.layout-estrategia-aba.ativa {
+    display: flex !important;
+}
+
+
+.card-treinador {
+    width: 250px !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box;
+}

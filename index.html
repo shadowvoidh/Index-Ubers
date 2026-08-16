@@ -2,6 +2,7 @@
 <html lang="pt">
 <head>
     <title>Time que o Barou Roubou</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/img/favicon.png">
     <link rel="stylesheet" href="assets/css/stlye.css">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=JetBrains+Mono&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -117,71 +118,235 @@
 
 
 <section id="tela-treinador" class="tela-projeto">
-            <button class="btn-voltar" onclick="mudarTela('formacao')">← Voltar ao Menu</button>
-            
-            <div class="conteudo-paginas-novas" style="padding: 20px; text-align: center; color: #fff;">
-                <h2 style="color: var(--gold-primary); font-family: var(--font-mono); letter-spacing: 2px; margin-bottom: 5px;">
-                    // DISPOSIÇÃO EM CAMPO (ESTRATÉGIA)
-                </h2>
-                <p style="color: var(--text-dim); font-size: 12px; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 1px;">
-                    Configuração posicional das peças táticas do Master Coach Marc Snuffy
-                </p>
+    <div class="conteudo-paginas-novas" style="padding: 20px; text-align: center; color: #fff;">
+        <h2 style="color: var(--gold-primary); font-family: var(--font-mono); letter-spacing: 2px; margin-bottom: 5px;">
+            // DISPOSIÇÃO EM CAMPO (ESTRATÉGIA)
+        </h2>
+        <p style="color: var(--text-dim); font-size: 12px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">
+            Configuração posicional das peças táticas do Master Coach Marc Snuffy
+        </p>
 
-                <div class="container-tatico" style="display: flex; justify-content: center; align-items: flex-start; gap: 30px; max-width: 1200px; margin: 0 auto;">
-                    
-                    <div class="campo-ubers">
+        <!-- Botões para alternar as Formações -->
+        <div class="botoes-formacao" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 25px;">
+            <button type="button" onclick="trocarFormacaoTatica('formacao-1')">STARTING 11</button>
+            <button type="button" onclick="trocarFormacaoTatica('formacao-2')">STAR CHANGE SYSTEM</button>
+            <button type="button" onclick="trocarFormacaoTatica('formacao-3')">FINAL FORMATION</button>
+        </div>
 
-                        <div class="linha ataque">
-                            <div class="jogador-pos barou" onclick="mudarTela('barou')" style="cursor: pointer;">Barou (O Rei)</div>
+        <!-- Container PAI Principal -->
+        <div class="layout-estrategia">
+
+            <!-- ================= FORMAÇÃO 1 (INICIA ATIVA) ================= -->
+            <div id="formacao-1" class="layout-estrategia-aba ativa">
+                <!-- BANCO F1 -->
+                <div class="painel-reservas">
+                    <div class="secao-banco">
+                        <div class="titulo-banco">COACH</div>
+                        <div class="item-reserva">
+                            <img src="assets/img/img/snuffy.jpg" class="foto-reserva" onerror="this.src='assets/img/img/snuffy.png'">
+                            <span>Marc Snuffy</span>
                         </div>
+                    </div>
+                    <hr class="divisor-banco">
+                    <div class="secao-banco">
+                        <div class="titulo-banco">BANCO</div>
+                        <div class="item-reserva"><img src="assets/img/img/Gen_Fukaku.webp" class="foto-reserva"><span>G. Fukaku</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Yukio_Ishikari.webp" class="foto-reserva"><span>Y. Ishikari</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Kyohei_Shiguma.webp" class="foto-reserva"><span>K. Shiguma</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Shingen_Tanaka.webp" class="foto-reserva"><span>S. Tanaka</span></div>
+                    </div>
+                </div>
 
-                        <div class="linha S ataque">
-                            <div class="jogador-pos sendou" onclick="mudarTela('sendou')" style="cursor: pointer;">Sendou</div>
+                <!-- CAMPO F1 -->
+                <div class="campo-ubers">
+                    <div class="linha ataque">
+                        <div class="jogador-pos barou" onclick="mudarTela('barou')" style="cursor: pointer;">
+                            <img src="assets/img/img/barou.jpg" alt="Barou" class="img-jogador">  
+                            <span>Barou (O Rei)</span>
+                        </div> 
+                    </div>
+                    <div class="linha S ataque">
+                        <div class="jogador-pos sendou" onclick="mudarTela('sendou')" style="cursor: pointer;">
+                            <img src="assets/img/img/Shuto_Sendo.webp" alt="Sendou" class="img-jogador">    
+                            <span>Sendou</span>
                         </div>
-
-                        <div class="linha meio">
-                            <div class="jogador-pos abdi">Abdi</div>
-                            <div class="jogador-pos drago">Drago</div>
-                            <div class="jogador-pos peron">Peron</div>
-                            <div class="jogador-pos rico">Rico</div>
+                    </div>
+                    <div class="linha meio">
+                        <div class="jogador-pos abdi"><img src="assets/img/img/abdi.png" alt="Abdi" class="img-jogador"><span>Abdi</span></div>
+                        <div class="jogador-pos drago"><img src="assets/img/img/DRAGO.webp" alt="Drago" class="img-jogador"><span>Drago</span></div>
+                        <div class="jogador-pos peron"><img src="assets/img/img/PERON.webp" alt="Peron" class="img-jogador"><span>Peron</span></div>
+                        <div class="jogador-pos rico"><img src="assets/img/img/RICO.webp" alt="Rico" class="img-jogador"><span>Rico</span></div>
+                    </div>
+                    <div class="linha vol">
+                        <div class="jogador-pos niko" onclick="mudarTela('niko')" style="cursor: pointer;">
+                            <img src="assets/img/img/NIko.png" alt="Niko" class="img-jogador">    
+                            <span>Niko</span>
                         </div>
+                    </div>
+                    <div class="linha defesa">
+                        <div class="jogador-pos aryu" onclick="mudarTela('aryu')" style="cursor: pointer;"><img src="assets/img/img/aryumusic.png" alt="Aryu" class="img-jogador"><span>Aryu</span></div>
+                        <div class="jogador-pos lorenzo" onclick="mudarTela('zombie')" style="cursor: pointer;"><img src="assets/img/img/Lorenzo.webp" alt="Zombie" class="img-jogador"><span>Lorenzo</span></div>
+                        <div class="jogador-pos aiku" onclick="mudarTela('aiku')" style="cursor: pointer;"><img src="assets/img/img/aikuu.jpg" alt="Aiku" class="img-jogador"><span>Aiku</span></div>
+                    </div>
+                    <div class="linha goleiro">
+                        <div class="jogador-pos canali"><img src="assets/img/img/Canali.webp" alt="Canali" class="img-jogador"><span>Canali</span></div>
+                    </div>
+                </div>
 
-                        <div class="linha vol">
-                            <div class="jogador-pos niko" onclick="mudarTela('niko')" style="cursor: pointer;">Niko</div>
+                <!-- CARD DO TREINADOR (F1) -->
+                <div class="card-treinador">
+                    <div class="badge-treinador">TREINADOR CHEFE</div>
+                    <img src="assets/img/img/snu.jpg" alt="Marc Snuffy" class="foto-treinador">
+                    <div class="info-treinador">
+                        <h2>Marc Snuffy</h2>
+                        <p class="subtitulo">Estrategista Chefe</p>
+                        <div class="frase-snuffy">
+                            "Se você não consegue ser uma peça útil dentro de uma engrenagem, você não é um gênio incompreendido... você é apenas descartável."
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="linha defesa">
-                            <div class="jogador-pos aryu" onclick="mudarTela('aryu')" style="cursor: pointer;">Aryu</div>
-                            <div class="jogador-pos lorenzo" onclick="mudarTela('zombie')" style="cursor: pointer;">Lorenzo</div>
-                            <div class="jogador-pos aiku" onclick="mudarTela('aiku')" style="cursor: pointer;">Aiku</div>
+            <!-- ================= FORMAÇÃO 2 ================= -->
+            <div id="formacao-2" class="layout-estrategia-aba">
+                <!-- BANCO F2 -->
+                <div class="painel-reservas">
+                    <div class="secao-banco">
+                        <div class="titulo-banco">COACH</div>
+                        <div class="item-reserva">
+                            <span>EM JOGO</span>
                         </div>
+                    </div>
+                    <hr class="divisor-banco">
+                    <div class="secao-banco">
+                        <div class="titulo-banco">BANCO</div>
+                        <div class="item-reserva"><img src="assets/img/img/Canali.webp" alt="Canali" class="foto-reserva"><span>Canali</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Shuto_Sendo.webp" alt="Sendou" class="foto-reserva"><span>Sendou</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Yukio_Ishikari.webp" class="foto-reserva"><span>Y. Ishikari</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Kyohei_Shiguma.webp" class="foto-reserva"><span>K. Shiguma</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Shingen_Tanaka.webp" class="foto-reserva"><span>S. Tanaka</span></div>
+                    </div>
+                </div>
 
-                        <div class="linha goleiro">
-                            <div class="jogador-pos canali">Canali</div>
+                <!-- CAMPO F2 -->
+                <div class="campo-ubers">
+                    <div class="linha ataque">
+                        <div class="jogador-pos barou" onclick="mudarTela('barou')" style="cursor: pointer;">
+                            <img src="assets/img/img/barou.jpg" alt="Barou" class="img-jogador">  
+                            <span>Barou (O Rei)</span>
+                        </div> 
+                    </div>
+                    <div class="linha S ataque">
+                        <div class="jogador-pos drago"><img src="assets/img/img/DRAGO.webp" alt="Drago" class="img-jogador"><span>Drago</span></div>
+                        <div class="jogador-pos niko" onclick="mudarTela('niko')" style="cursor: pointer;">
+                            <img src="assets/img/img/NIko.png" alt="Niko" class="img-jogador">    
+                            <span>Niko</span>
                         </div>
+                        <div class="jogador-pos peron"><img src="assets/img/img/PERON.webp" alt="Peron" class="img-jogador"><span>Peron</span></div>
+                    </div>
+                    <div class="linha meio">
+                        <div class="jogador-pos lorenzo" onclick="mudarTela('zombie')" style="cursor: pointer;"><img src="assets/img/img/Lorenzo.webp" alt="Zombie" class="img-jogador"><span>Lorenzo</span></div>
+                    </div>
+                    <div class="linha vol">
+                        <div class="jogador-pos snuffy"><img src="assets/img/img/snu.jpg" alt="Snuffy" class="img-jogador"><span>Marc.Snuffy</span></div>
+                    </div>
+                    <div class="linha defesa">
+                        <div class="jogador-pos abdi"><img src="assets/img/img/abdi.png" alt="Abdi" class="img-jogador"><span>Abdi</span></div>
+                        <div class="jogador-pos aryu" onclick="mudarTela('aryu')" style="cursor: pointer;"><img src="assets/img/img/aryumusic.png" alt="Aryu" class="img-jogador"><span>Aryu</span></div>
+                        <div class="jogador-pos aiku" onclick="mudarTela('aiku')" style="cursor: pointer;"><img src="assets/img/img/aikuu.jpg" alt="Aiku" class="img-jogador"><span>Aiku</span></div>
+                        <div class="jogador-pos rico"><img src="assets/img/img/RICO.webp" alt="Rico" class="img-jogador"><span>Rico</span></div>
+                    </div>
+                    <div class="linha goleiro">
+                        <div class="jogador-pos fukaku"><img src="assets/img/img/Gen_Fukaku.webp" alt="Fukaku" class="img-jogador"><span>Fukaku</span></div>
+                    </div>
+                </div>
 
-                    </div> <div class="card-treinador">
-                        <div class="badge-treinador">
-                            TREINADOR CHEFE
+                <!-- CARD DO TREINADOR (F2) -->
+                <div class="card-treinador">
+                    <div class="badge-treinador">STAR PLAYER</div>
+                    <img src="assets/img/img/snuffyvsnoa.png" alt="Marc Snuffy" class="foto-treinador">
+                    <div class="info-treinador">
+                        <h2>Marc Snuffy</h2>
+                        <p class="subtitulo">Mestre em Campo (3 Minutos)</p>
+                        <div class="frase-snuffy">
+                            "Noa já está na hora de nos aposentarmos, vamos deixar as crianças brincarem."
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                        <img src="assets/img/img/snu.jpg"
-                             alt="Marc Snuffy"
-                             class="foto-treinador">
-
-                        <div class="info-treinador">
-                            <h2>Marc Snuffy</h2>
-                            <p class="subtitulo">Estrategista Chefe</p>
-                            <div class="frase-snuffy">
-                                "Se você não consegue ser uma peça útil dentro de uma engrenagem, você não é um gênio incompreendido... você é apenas descartável."
-                            </div>
+            <!-- ================= FORMAÇÃO 3 ================= -->
+            <div id="formacao-3" class="layout-estrategia-aba">
+                <!-- BANCO F3 -->
+                <div class="painel-reservas">
+                    <div class="secao-banco">
+                        <div class="titulo-banco">COACH</div>
+                        <div class="item-reserva">
+                            <img src="assets/img/img/snuffy.jpg" class="foto-reserva" onerror="this.src='assets/img/img/snuffy.png'">
+                            <span>Marc Snuffy</span>
                         </div>
-                    </div> </div> </div>
-        </section>
+                    </div>
+                    <hr class="divisor-banco">
+                    <div class="secao-banco">
+                        <div class="titulo-banco">BANCO</div>
+                        <div class="item-reserva"><img src="assets/img/img/Canali.webp" alt="Canali" class="foto-reserva"><span>Canali</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Yukio_Ishikari.webp" class="foto-reserva"><span>Y. Ishikari</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Kyohei_Shiguma.webp" class="foto-reserva"><span>K. Shiguma</span></div>
+                        <div class="item-reserva"><img src="assets/img/img/Shingen_Tanaka.webp" class="foto-reserva"><span>S. Tanaka</span></div>
+                    </div>
+                </div>
 
+                <!-- CAMPO F3 -->
+                <div class="campo-ubers">
+                    <div class="linha ataque">
+                        <div class="jogador-pos barou" onclick="mudarTela('barou')" style="cursor: pointer;">
+                            <img src="assets/img/img/barou.jpg" alt="Barou" class="img-jogador">  
+                            <span>Barou (O Rei)</span>
+                        </div>
+                    </div>
+                    <div class="linha meio">
+                        <div class="jogador-pos abdi"><img src="assets/img/img/abdi.png" alt="Abdi" class="img-jogador"><span>Abdi</span></div>
+                        <div class="jogador-pos drago"><img src="assets/img/img/DRAGO.webp" alt="Drago" class="img-jogador"><span>Drago</span></div>
+                        <div class="jogador-pos sendou" onclick="mudarTela('sendou')" style="cursor: pointer;">
+                            <img src="assets/img/img/Shuto_Sendo.webp" alt="Sendou" class="img-jogador">    
+                            <span>Sendou</span>
+                        </div>
+                        <div class="jogador-pos peron"><img src="assets/img/img/PERON.webp" alt="Peron" class="img-jogador"><span>Peron</span></div>
+                        <div class="jogador-pos rico"><img src="assets/img/img/RICO.webp" alt="Rico" class="img-jogador"><span>Rico</span></div>
+                    </div>
+                    <div class="linha vol">
+                        <div class="jogador-pos niko" onclick="mudarTela('niko')" style="cursor: pointer;">
+                            <img src="assets/img/img/NIko.png" alt="Niko" class="img-jogador">    
+                            <span>Niko</span>
+                        </div>
+                    </div>
+                    <div class="linha defesa">
+                        <div class="jogador-pos aryu" onclick="mudarTela('aryu')" style="cursor: pointer;"><img src="assets/img/img/aryumusic.png" alt="Aryu" class="img-jogador"><span>Aryu</span></div>
+                        <div class="jogador-pos lorenzo" onclick="mudarTela('zombie')" style="cursor: pointer;"><img src="assets/img/img/Lorenzo.webp" alt="Zombie" class="img-jogador"><span>Lorenzo</span></div>
+                        <div class="jogador-pos aiku" onclick="mudarTela('aiku')" style="cursor: pointer;"><img src="assets/img/img/aikuu.jpg" alt="Aiku" class="img-jogador"><span>Aiku</span></div>
+                    </div>
+                    <div class="linha goleiro">
+                        <div class="jogador-pos fukaku"><img src="assets/img/img/Gen_Fukaku.webp" alt="Fukaku" class="img-jogador"><span>Fukaku</span></div>
+                    </div>
+                </div>
 
+                <!-- CARD DO TREINADOR (F3 - BAROU VERMELHO) -->
+                <div class="card-treinador card-barou-vermelho" style="border-color: #ff003c; box-shadow: 0 0 15px rgba(255, 0, 60, 0.4);">
+                    <div class="badge-treinador" style="background-color: #ff003c; color: #fff;">O VERDADEIRO REI</div>
+                    <img src="assets/img/img/baroking.png" alt="Barou" class="foto-treinador" style="border-color: #ff003c;">
+                    <div class="info-treinador">
+                        <h2 style="color: #ff003c;">Shoei Barou</h2>
+                        <p class="subtitulo" style="color: #ff4d6d;">Eu não sou igual seu amigo</p>
+                        <div class="frase-snuffy" style="border-left-color: #ff003c;">
+                            "Snuffy, eu não vou deixar você se aposentar aqui. Eu ainda quero usar suas taças, Snuffy, por uns bons anos. Perder também faz parte, isso só começou."
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
+        </div> <!-- Fim .layout-estrategia -->
+    </div>
+</section>
 
        <section id="tela-barou" class="tela-projeto">
     <button class="btn-voltar" onclick="mudarTela('formacao')">← Voltar ao Campo</button>

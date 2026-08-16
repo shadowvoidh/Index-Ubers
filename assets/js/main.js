@@ -131,3 +131,37 @@ function mudarTela(idAlvo) {
 // ======================================================
 //Testes para o futuro, não mexer por enquanto
 // ======================================================
+
+
+
+function trocarFormacao(indexFormacao) {
+    // Esconde todas as formações (e seus respectivos bancos)
+    const todasFormacoes = document.querySelectorAll('.container-formacao');
+    todasFormacoes.forEach(formacao => formacao.style.display = 'none');
+
+    // Exibe apenas a formação selecionada
+    const formacaoAtiva = document.getElementById(`formacao-${indexFormacao}`);
+    if (formacaoAtiva) {
+        formacaoAtiva.style.display = 'flex';
+    }
+}
+
+
+
+function trocarFormacaoTatica(idFormacao) {
+    // 1. Esconde TODAS as abas de formação
+    const abas = document.querySelectorAll('.layout-estrategia-aba');
+    abas.forEach(aba => {
+        aba.classList.remove('ativa');
+        aba.style.setProperty('display', 'none', 'important');
+    });
+
+    // 2. Procura a aba clicada e força o display flex
+    const abaAtiva = document.getElementById(idFormacao);
+    if (abaAtiva) {
+        abaAtiva.classList.add('ativa');
+        abaAtiva.style.setProperty('display', 'flex', 'important');
+    } else {
+        console.error("Aba não encontrada com o ID:", idFormacao);
+    }
+}
