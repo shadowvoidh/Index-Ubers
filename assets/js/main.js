@@ -1,3 +1,7 @@
+/*/////////////////////////////////////////////////////////
+Leave it alone, that's art. (@shadow_voidh)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Sistema Tático da Ubers Iniciado... 🇮🇹💎");
 
@@ -30,14 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const botoesPlay = document.querySelectorAll('.botao-play-player');
 
     botoesPlay.forEach(btnPlay => {
-        btnPlay.addEventListener('click', function() {
-            // Encontra a seção ou container onde o player de música está embutido
+        btnPlay.addEventListener('click', function() {          
             const containerPai = this.closest('.tela-projeto') || this.closest('#root');
             const musica = containerPai.querySelector('.musica-mp3-player');
 
             if (musica) {
                 if (musica.paused) {
-                    // Pausa qualquer outra música que esteja tocando antes de iniciar a nova
                     document.querySelectorAll('.musica-mp3-player').forEach(m => m.pause());
                     document.querySelectorAll('.botao-play-player').forEach(b => b.innerText = '▶');
 
@@ -135,11 +137,10 @@ function mudarTela(idAlvo) {
 
 
 function trocarFormacao(indexFormacao) {
-    // Esconde todas as formações (e seus respectivos bancos)
     const todasFormacoes = document.querySelectorAll('.container-formacao');
     todasFormacoes.forEach(formacao => formacao.style.display = 'none');
 
-    // Exibe apenas a formação selecionada
+
     const formacaoAtiva = document.getElementById(`formacao-${indexFormacao}`);
     if (formacaoAtiva) {
         formacaoAtiva.style.display = 'flex';
@@ -149,14 +150,11 @@ function trocarFormacao(indexFormacao) {
 
 
 function trocarFormacaoTatica(idFormacao) {
-    // 1. Esconde TODAS as abas de formação
     const abas = document.querySelectorAll('.layout-estrategia-aba');
     abas.forEach(aba => {
         aba.classList.remove('ativa');
         aba.style.setProperty('display', 'none', 'important');
     });
-
-    // 2. Procura a aba clicada e força o display flex
     const abaAtiva = document.getElementById(idFormacao);
     if (abaAtiva) {
         abaAtiva.classList.add('ativa');

@@ -1,4 +1,10 @@
- /* @Shadow_Voidh(CSS: Body) */
+/*/////////////////////////////////////////////////////////
+Leave it alone, that's art. (@shadow_voidh)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Body)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
  body {
     background-color: #0a0a0a; 
     background-image: 
@@ -24,8 +30,9 @@ background-color: #050505;
     
 }
 
-   
-/* !@Shadow_Voidh(CSS: Estilo) */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Estilo) ROOT
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/   
 :root {
     /* !---@Shadow_Voidh  (UBERS)---   */
     --bg-black: #0b0b0a;
@@ -66,8 +73,9 @@ background-color: #050505;
     --accent-ubersmusic: #00ff00;  
 }
 
-
-
+/*/////////////////////////////////////////////////////////
+Botões
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 button {
     background: transparent;
     border: 1px solid var(--gold-primary);
@@ -92,7 +100,9 @@ button.primary {
 button.primary:hover {
     background: var(--gold-soft)
 }
-/* @Shadow_Voidh(CSS: Gifs) */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Gifs)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 .player-multimidia {
     width: 400px; 
     height: 300px;
@@ -149,7 +159,9 @@ button.primary:hover {
     box-shadow: 0 0 20px var(--accent-fukaku); 
 }
 
-/* !@Shadow_Voidh(CSS: Fontes) */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Fontes)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 h1,h2,h3 {
     font-family: var(--font-heading);
     letter-spacing: .5px
@@ -216,7 +228,9 @@ p {
  .corletraglamur {
      color: #7a0f63
 }
-/* !@Shadow_Voidh(CSS: Musica) */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Musica)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 .spotify-widget {
     position: fixed;
     bottom: 20px;
@@ -243,9 +257,10 @@ p {
     opacity: 0.6;
 }
 
-/* --- @Shadow_Voidh (Cores) --- */
 
-
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Cores)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 .spotify-aiku { border-left-color: var(--accent-aiku); }
 .spotify-aiku .song-title { color: var(--accent-aiku); }
 .spotify-aiku .progress { background: var(--accent-aiku); }
@@ -314,6 +329,9 @@ p {
     border-radius: 2px;
     box-shadow: 0 0 8px currentColor; 
 }
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Botões)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 /* @Shadow_Voidh(CSS: Botões) */
 .btn-accept {
     display: block;
@@ -354,8 +372,10 @@ p {
 .btn-accept:hover::after {
     left: 100%;
 }
-/* @Shadow_voidh(CSS: Status) */
 
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Status)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
  .perfil-card {
 
     background: #0f0f0f;
@@ -612,12 +632,12 @@ p {
     position: absolute !important;
     top: 50% !important;
     left: 50% !important;
-    transform: translate(-50%, -50%) !important; /* Centraliza perfeitamente no meio da tela preta */
-    z-index: 9999 !important; /* Garante posicionamento à frente de GIFs e widgets do Spotify */
+    transform: translate(-50%, -50%) !important; 
+    z-index: 9999 !important; 
     width: 90% !important;
     max-width: 520px !important;
-    background: #0d0d0d !important; /* Fundo sólido escuro para ocultar as informações traseiras */
-    border: 2px solid var(--gold-primary) !important; /* Borda destacada em ouro */
+    background: #0d0d0d !important; 
+    border: 2px solid var(--gold-primary) !important; 
     border-radius: 4px !important;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.95) !important;
     padding: 25px !important;
@@ -726,13 +746,13 @@ p {
 }
 
 
-/* ?formação */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Formaçao do Campo Ubers)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 .campo-ubers {
     background: radial-gradient(circle, #0f3019 0%, #081c0e 100%);
     border: 3px solid var(--gold-primary);
     box-shadow: 0 0 40px var(--gold-glow);
-    
-    /* Removemos o width: 100% solto para deixar o Grid controlar a largura */
     height: 750px;                 
     
     padding: 35px 20px;
@@ -743,9 +763,11 @@ p {
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 0 !important;          /* Remove margens antigas que causavam o empurrão */
+    margin: 0 !important;          
 }
-/* Linhas do Gramado (Meio de Campo, Áreas e Círculo Central) */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Meio de Campo, Áreas e Círculo Central)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 .campo-ubers::before {
     content: '';
     position: absolute;
@@ -753,15 +775,15 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Removemos as linhas verticais e adicionamos linhas horizontais de marcação tática */
+
 background: 
-        /* Linha do Meio de Campo (Exatamente no centro) */
+        /* Linha do Meio de Campo  */
         linear-gradient(to bottom, transparent 49.7%, rgba(201, 162, 39, 0.3) 49.7%, rgba(201, 162, 39, 0.3) 50.3%, transparent 50.3%),
         
         /* Linha da Área do Barou (Ataque) */
         linear-gradient(to bottom, rgba(201, 162, 39, 0.2) 15%, transparent 15%),
         
-        /* Linha da Área do Canali (Goleiro) */
+        /* Linha da Área do Goleiro */
         linear-gradient(to top, rgba(201, 162, 39, 0.2) 15%, transparent 15%);
         
     pointer-events: none;
@@ -789,31 +811,29 @@ background:
     align-items: center;
     width: 100%;
     position: relative;
-    z-index: 2; /* Garante que os cards fiquem acima das linhas desenhadas */
+    z-index: 2; 
 }
-
-/* Ajustes finos de posicionamento para o losango/funções */
 .linha.ataque, .linha.goleiro, .linha.vol {
     justify-content: center;
 }
 
 .linha.meio {
     display: flex;
-    justify-content: center; /* Centraliza todo o bloco para sincronizar */
-    gap: 30px; /* Controla o espaçamento geral entre eles */
+    justify-content: center; 
+    gap: 30px; 
     padding: 0;
 }
 
-/* Movendo o Abdi e o Drago para a esquerda para quebrar a simetria engessada */
+
 .jogador-pos.abdi {
-    transform: translateX(-40px); /* Move o bloco do Abdi para a esquerda */
+    transform: translateX(-40px); 
 }
 
 .jogador-pos.drago {
-    transform: translateX(-25px); /* Desloca o Drago para encaixar melhor perto do círculo */
+    transform: translateX(-25px); 
 }
 
-/* Ajuste opcional para balancear o lado direito se achar necessário */
+
 .jogador-pos.peron {
     transform: translateX(10px);
 }
@@ -821,7 +841,7 @@ background:
 .jogador-pos.rico {
     transform: translateX(25px);
 }
-/* Estilo dos Mini-Cards dos Jogadores (Mantendo o seu padrão com upgrade de sombra) */
+/* Mini-Cards dos Jogadores  */
 .jogador-pos {
     background: rgba(18, 17, 15, 0.85);
     backdrop-filter: blur(4px);
@@ -844,15 +864,14 @@ background:
 }
 .container-tatico {
     display: grid !important;
-    /* Coluna 1: O campo (máximo 800px) | Coluna 2: O Snuffy (fixo em 280px) */
     flex: 1 !important;
     grid-template-columns: minmax(300px, 800px) 280px !important;
-    justify-content: center;       /* Centraliza o conjunto na tela */
-    align-items: start;            /* Alinha o topo do Snuffy com o topo do campo */
-    gap: 30px;                     /* Distância perfeita entre o campo e o técnico */
+    justify-content: center;       
+    align-items: start;           
+    gap: 30px;                     
     width: 100%;
-    max-width: 1600px;             /* Largura total controlada para caber em qualquer monitor */
-    margin: 40px auto;             /* Centraliza o bloco na página */
+    max-width: 1600px;            
+    margin: 40px auto;            
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -864,7 +883,7 @@ background:
     border: 2px solid var(--gold-primary);
     box-shadow: 0 0 30px var(--gold-glow);
     
-    width: 280px !important;       /* Fixa o tamanho exato da segunda coluna */
+    width: 280px !important;     
     padding: 25px;
     border-radius: 12px;
     text-align: center;
@@ -872,7 +891,7 @@ background:
     font-family: var(--font-body);
     color: var(--text-primary);
     box-sizing: border-box;
-    margin: 0 !important;          /* Garante que nenhuma margem jogue ele para fora */
+    margin: 0 !important;          
 }
 /* Tag dourada acima do card */
 .badge-treinador {
@@ -933,7 +952,7 @@ background:
     padding-top: 12px;
 }
 
-/* Animação de entrada estilosa para o card */
+/* Animação de entrada  */
 @keyframes fadeInRight {
     from {
         opacity: 0;
@@ -952,10 +971,8 @@ background:
     min-height: 100vh;
     animation: fadeEntrada 0.5s ease-in-out;
 }
-
-/* Mostra apenas a seção que tiver a classe .ativa */
 .tela-projeto.ativa {
-    display: block; /* Ou flex/grid dependendo do seu layout original */
+    display: block; 
 }
 
 /* Estilo do botão de voltar */
@@ -973,7 +990,7 @@ background:
     z-index: 100;
 }
 
-/* Animação para a troca de tela ficar suave */
+/* Animação para a troca de tela */
 @keyframes fadeEntrada {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -990,20 +1007,18 @@ background:
     border: 2px solid var(--border-soft);
     border-radius: 2px;
     box-shadow: var(--shadow-deep);
-    overflow: visible !important; /* Impede o surgimento de barras de rolagem internas indesejadas */
+    overflow: visible !important; 
 }
 .contract-container {
-    background: #0a0a0a !important; /* Força um fundo preto sólido profundo */
-    border: 2px solid #222222;       /* Borda sutil para delimitar o papel do contrato */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); /* Destaca o documento do fundo quadriculado */
+    background: #0a0a0a !important; 
+    border: 2px solid #222222;      
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     padding: 40px;
     max-width: 780px;
     width: 100%;
     position: relative;
     box-sizing: border-box;
 }
-
-        /* Linhas de Grade Estéticas */
 .contract-container::before {
             content: '';
             position: absolute;
@@ -1028,7 +1043,9 @@ background:
  .bottom-left { bottom: 20px; left: 20px; border-right: 0; border-top: 0; }
 .bottom-right { bottom: 20px; right: 20px; border-left: 0; border-top: 0; }
 
-        /* Header */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Header)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 .header-meta {
             display: flex;
             justify-content: space-between;
@@ -1070,7 +1087,9 @@ background:
             margin-top: 10px;
         }
 
-        /* Cláusulas */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Regras)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
         .clause {
             position: relative;
             padding-left: 40px;
@@ -1119,8 +1138,6 @@ background:
             opacity: 0.3;
             margin: 40px 0;
         }
-
-        /* Selo de Verificação */
         .verification-seal {
             text-align: center;
             margin: 60px 0;
@@ -1137,7 +1154,6 @@ background:
             letter-spacing: 4px;
         }
 
-        /* Botão Profissional */
         .btn-accept {
             display: block;
             width: fit-content;
@@ -1210,27 +1226,29 @@ background:
 }
 
 
-
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Jogadores Arrumados )
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 
 .jogador {
     display: flex;
-    flex-direction: column; /* Empilha a imagem acima do nome */
-    align-items: center;    /* Centraliza horizontalmente */
+    flex-direction: column; 
+    align-items: center;    
     justify-content: center;
-    gap: 4px;              /* Espaço entre a imagem e o nome */
+    gap: 4px;             
 }
 
-/* Ícone do Jogador (Redondo / Avatar) */
+/* Ícone do Jogador  */
 .icon-jogador {
-    width: 45px;            /* Ajuste o tamanho da imagem conforme necessário */
+    width: 45px;           
     height: 45px;
-    border-radius: 50%;     /* Deixa a foto redonda */
+    border-radius: 50%;    
     object-fit: cover;
-    border: 2px solid #d4af37; /* Borda dourada combinando com o tema */
+    border: 2px solid #d4af37; 
     background-color: #000;
 }
 
-/* Caixa com o Nome do Jogador (seu estilo atual) */
+/*  Nome do Jogador */
 .nome-jogador {
     background-color: rgba(0, 0, 0, 0.6);
     color: #e5b324;         /* Cor do texto amarela/dourada */
@@ -1245,16 +1263,16 @@ background:
 
 
 
-/* Aumenta o tamanho da foto do jogador */
+/* foto do jogador */
 .img-jogador {
-    width: 70px;          /* Aumentado de 40px para 70px */
-    height: 70px;         /* Aumentado de 40px para 70px */
+    width: 70px;          
+    height: 70px;        
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #d4af37;
 }
 
-/* Garante espaço suficiente no card do jogador */
+/* card do jogador */
 .jogador-pos {
     overflow: visible !important;
     display: flex !important;
@@ -1287,7 +1305,7 @@ background:
     box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
 }
 
-/* Títulos de Coach e Banco */
+/* Títulos Snuffy */
 .titulo-banco {
     background-color: #d4af37;
     color: #000;
@@ -1309,7 +1327,7 @@ background:
     opacity: 0.5;
 }
 
-/* Linha com a foto e o nome do jogador/coach */
+/* Linha do Banco Reserva */
 .item-reserva {
     display: flex;
     align-items: center;
@@ -1327,7 +1345,7 @@ background:
     transform: translateX(3px);
 }
 
-/* Bolinha da foto no lado esquerdo */
+/* Foto Reserva */
 .foto-reserva {
     width: 40px;
     height: 40px;
@@ -1338,7 +1356,7 @@ background:
     flex-shrink: 0;
 }
 
-/* Nome do reserva */
+/* Nome do Reserva */
 .nome-reserva {
     color: #e5b324;
     font-weight: bold;
@@ -1346,13 +1364,15 @@ background:
     font-family: monospace, sans-serif;
 }
 
-/* Container que alinha os 3 blocos lado a lado */
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS:Estrategia )
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 .layout-estrategia {
     display: flex !important;
-    flex-direction: row !important; /* Força ficar um do lado do outro */
+    flex-direction: row !important; 
     justify-content: center;
-    align-items: flex-start;        /* Alinha todos pelo topo */
-    gap: 20px;                      /* Espaço entre os painéis */
+    align-items: flex-start;        
+    gap: 20px;                     
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -1368,27 +1388,28 @@ background:
     margin: 0 auto;
 }
 
-/* Fixa a largura do painel do Banco */
+/*  largura do painel do Banco */
 .painel-reservas {
-    width: 200px !important;       /* Largura fixa menor */
-    flex-shrink: 0 !important;      /* Impede que o banco encolha */
+    width: 200px !important;      
+    flex-shrink: 0 !important;      
 }
 
-/* Fixa a largura da carta do Treinador */
+/* carta do Treinador */
 .painel-treinador {
-    width: 260px !important;       /* Largura fixa da carta da direita */
-    flex-shrink: 0 !important;      /* Impede que o treinador encolha */
+    width: 260px !important;       
+    flex-shrink: 0 !important;      
 }
 
-
+/*/////////////////////////////////////////////////////////
+@Shadow_Voidh(CSS: Campo Tatico)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/  
 .campo-tatico, 
 div[class*="campo"] {
-    width: 750px !important;       /* Aumenta a largura fixa do campo */
-    min-width: 700px !important;   /* Impede que diminua */
+    width: 750px !important;       
+    min-width: 700px !important;   
 }
 
 
-/* Por padrão, esconde todas as formações */
 .layout-estrategia {
     display: none;
     justify-content: center;
@@ -1399,11 +1420,11 @@ div[class*="campo"] {
     margin: 0 auto;
 }
 
-/* Mostra apenas a formação que tiver a classe 'ativo' */
+
 .layout-estrategia.ativo {
     display: flex !important;
 }
-/* Container que segura o Banco + Campo */
+
 .container-tatico {
     display: flex;
     justify-content: center;
@@ -1420,7 +1441,7 @@ div[class*="campo"] {
     width: 220px;
 }
 
-/* Campo flexível para não estourar a tela */
+
 .campo-ubers {
     flex: 1; 
     max-width: 700px; 
@@ -1438,9 +1459,6 @@ div[class*="campo"] {
 }
 
 
-
-
-/* Container pai de cada aba */
 .layout-estrategia,
 .layout-estrategia-aba {
     display: flex !important;
@@ -1454,14 +1472,13 @@ div[class*="campo"] {
     box-sizing: border-box !important;
 }
 
-/* Painel de Reservas do Coach/Banco */
+
 .painel-reservas {
     flex-shrink: 0 !important;
     width: 240px !important;
     margin-top: 0 !important; 
 }
 
-/* Estrutura do Campo */
 .campo-ubers {
     flex: 1 !important;
     max-width: 650px !important; 
@@ -1471,11 +1488,6 @@ div[class*="campo"] {
 }
 
 
-
-
-
-
-/* Centraliza perfeitamente todas as linhas do campo */
 .campo-ubers .linha {
     display: flex !important;
     justify-content: center !important; 
@@ -1484,7 +1496,6 @@ div[class*="campo"] {
     margin: 0 auto !important;
 }
 
-/* Espaçamento uniforme quando houver múltiplos jogadores na mesma linha (Meio e Defesa) */
 .campo-ubers .linha.meio,
 .campo-ubers .linha.defesa {
     justify-content: space-around !important; 
@@ -1563,9 +1574,6 @@ div[class*="campo"] {
 }
 
 
-
-
-
 .layout-estrategia {
     width: 100%;
     max-width: 1200px;
@@ -1620,7 +1628,6 @@ div[class*="campo"] {
 .layout-estrategia-aba.ativa {
     display: flex !important;
 }
-
 
 .card-treinador {
     width: 250px !important;
