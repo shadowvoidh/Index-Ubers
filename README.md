@@ -32,7 +32,7 @@ Você pode testar o projeto de duas formas:
 
 ### 🌐 1. Pelo Navegador (GitHub Pages)
 O projeto está hospedado e rodando online! Acesse o link abaixo para acessar agora mesmo:
-👉 **[CLIQUE AQUI PARA ACESSAR](Ainda n ta online)**
+👉 **[CLIQUE AQUI PARA ACESSAR](https://index-ubers.alwaysdata.net/)**
 
 
 
