@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", (): void => {
   ]);
 
   // DON LORENZO
-  iniciarSequenciaJogador('player-lorenzo', [
+  iniciarSequenciaJogador('player-zombie', [
     { src: "/assets/img/gif/don-lorenzo-music.gif", tempo: 4700 }
   ]);
 
@@ -137,15 +137,23 @@ document.addEventListener("DOMContentLoaded", (): void => {
 // ======================================================
 
 function mudarTela(idAlvo: string): void {
-  document.querySelectorAll<HTMLElement>('.tela-projeto').forEach((tela) => {
+  const todasTelas = document.querySelectorAll<HTMLElement>('.tela-projeto');
+  
+  todasTelas.forEach((tela) => {
     tela.classList.remove('ativa');
+    tela.style.display = 'none'; 
   });
 
-  const telaDestino = document.getElementById(`tela-${idAlvo}`);
+  const idProcurado = `tela-${idAlvo}`;
+  const telaDestino = document.getElementById(idProcurado);
+
   if (telaDestino) {
     telaDestino.classList.add('ativa');
+    telaDestino.style.display = 'block'; // Força exibir a tela encontrada
     window.scrollTo(0, 0);
-    console.log(`Metavisão Ativada: Transição para ${idAlvo} 👁️`);
+    console.log(`Metavisão Ativada: Transição para #${idProcurado} 👁️`);
+  } else {
+    console.error(`[ERRO] Elemento com ID '${idProcurado}' não foi encontrado no DOM!`);
   }
 }
 

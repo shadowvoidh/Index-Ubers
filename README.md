@@ -9,6 +9,7 @@ Aplicação web desenvolvida com o objetivo de consolidar conceitos avançados d
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
 </p>
 
 ---
@@ -31,14 +32,9 @@ Você pode testar o projeto de duas formas:
 
 ### 🌐 1. Pelo Navegador (GitHub Pages)
 O projeto está hospedado e rodando online! Acesse o link abaixo para acessar agora mesmo:
-👉 **[CLIQUE AQUI PARA ACESSAR](https://shadowvoidh.github.io/Index-Ubers/)**
+👉 **[CLIQUE AQUI PARA ACESSAR](Ainda n ta online)**
 
-### 💻 2. Executando Localmente
-Se quiser rodar o projeto na sua máquina para ver o código funcionando:
-1. Clone este repositório ou baixe os arquivos.
-2. Abra a pasta do projeto no seu editor de código (como o **VS Code**).
-3. Instale a extensão **Live Server** no VS Code.
-4. Abra o arquivo `index.html` e clique no botão **Go Live** no canto inferior direito da tela.
+
 
 ---
 
@@ -49,10 +45,32 @@ O projeto foi construído utilizando as principais tecnologias da Web:
 | Tecnologia | Função no Projeto |
 | :--- | :--- |
 | **HTML5** | Estruturação dos elementos da página e containers do jogo. |
+| **PHP** | Renderização dinâmica de dados dos jogadores, carregamento modular do template e gerenciamento de estados no backend. |
 | **CSS3** | Estilização visual, cores, posicionamento e responsividade. |
 | **JavaScript** | Toda a lógica do jogo, movimentação e interatividade. |
 | **TypeScript** | Tipagem estática e organização da lógica do sistema tático, manipulando o DOM com mais segurança e autocompletar no desenvolvimento. |
 
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+Ubers/
+├── 📁 assets/
+│   ├── 📁 css/
+│   │   └── style.css          # Estilização visual e temas
+│   ├── 📁 img/                # Imagens, GIFs ,Músicas , efeitos sonoros e logotipos dos jogadores
+│   
+├── 📁 includes/
+│   └── jogadores.php          # Array com dados e status dos jogadores
+│
+├── 📁 src/
+│   └── main.ts                # Código fonte original em TypeScript
+│
+├── index.php                  # Aplicação principal (renderização dinâmica)
+└── tsconfig.json              # Configurações do compilador TypeScript
+└── readme.md                  # Readme do Projeto 
+```
 ---
 
 ## 🚀 Próximos Passos / Funcionalidades Futuras

@@ -1634,3 +1634,11 @@ div[class*="campo"] {
     flex-shrink: 0 !important;
     box-sizing: border-box;
 }
+
+.tela-projeto {
+    display: none !important;
+}
+
+.tela-projeto.ativa {
+    display: block !important;
+}
