@@ -21,7 +21,7 @@ O **Ubers** é um projeto de aplicativo web desenvolvido para rodar direto no na
 > 💡 *O objetivo do aplicativo é informar sobre os Principais Jogadores do Ubers e Mostrar a Formação do Time e suas Regras "*
 
 <p align="center">
-  <img src="assets/img/img/ubersprint.png" alt=" Ubers">
+  <img src="./assets/img/img/ubersprint.png" alt=" Ubers">
 </p>
 
 ---
@@ -81,7 +81,7 @@ O projeto ainda está recebendo melhorias! Aqui estão algumas ideias que preten
 
 ---
 <p align="center">
-  <img src="assets/img/img/ubersjunto.webp" alt="Barou">
+  <img src="./assets/img/img/ubersjunto.webp" alt="Barou">
 </p>
 
 ##  👤 Autor
