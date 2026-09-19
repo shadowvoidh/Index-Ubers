@@ -1,3 +1,5 @@
+**[PT-BR](security.md)** | 🇺🇸 **[English]**
+
 # Security Policy
 
 The **Ubers** development team takes the security of this project and web application seriously. This document outlines our policy for reporting and handling security vulnerabilities.
