@@ -1,4 +1,4 @@
-**[PT-BR ]** |   **[[ENG 🇺🇸 ]](SECURITY.en.md)**
+**[PT-BR ]** |   **[[ENG 🇺🇸 ]](security.en.md)**
 # Política de Segurança
 
 A equipe de desenvolvimento do **Ubers** leva a sério a segurança do projeto e da aplicação web. Esta página descreve nossas políticas para relatar e tratar vulnerabilidades de segurança.
