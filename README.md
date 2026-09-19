@@ -20,7 +20,7 @@ Aplicação web desenvolvida com o objetivo de consolidar conceitos avançados d
 
 O **Ubers** é um projeto de aplicativo web desenvolvido para rodar direto no navegador. 
 
-> 💡 *O objetivo do aplicativo é informar sobre os Principais Jogadores do Ubers e Mostrar a Formação do Time e suas Regras "*
+> 💡 *"O objetivo do aplicativo é informar sobre os Principais Jogadores do Ubers e Mostrar a Formação do Time e suas Regras "*
 
 <p align="center">
   <img src="./assets/img/img/ubersprint.png" alt=" Ubers">
